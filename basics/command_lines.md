@@ -1,7 +1,7 @@
 ```
 sed 's/dude/Colt/g' report.txt > report_new.txt
 
-echo "Welcome To The Geek Stuff" | sed 's/\(\b[A-Z]\)/\(\1\)/g'
+echo "Welcome To The GDWeek StuffD DADF e" | sed 's/\([A-Z]\)/\(1\)/g'
 ```
 
 
@@ -26,7 +26,7 @@ chomd 777 path/to/file
 [b] --> 表示设备文件里面的可供存储的接口设备
 [c] --> 表示设备文件里面的串行端口设备，例如键盘，鼠标（一次性读取设备）
 
-r (read): 可读取此文件的实际内容，如读取文本文件的文字内容等
+r(read): 可读取此文件的实际内容，如读取文本文件的文字内容等
 w(write): 可以编辑，新增或者修改该文件的内容（但能不能删除这个文件与这个用户有没有这个文件的write权限无关）
 x(execute): 该文件具有可以被系统执行的权限，在windows中一个文件是否具有执行的能力，是根据 “拓展名” 来判断的，例如.exe, .bat, .com等，但是在linux下面，我们的文件是否能被执行则是由是否具有 “x” 这个权限来决定的，而与文件名没有绝对关系。
 权限对目录的重要性

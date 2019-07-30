@@ -1,3 +1,2 @@
-```
-autopep8 --in-place ugly_code.py
-```
+
+autopep8 --in-place --aggressive --aggressive ugly_code.py
