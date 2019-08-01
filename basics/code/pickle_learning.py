@@ -1,13 +1,13 @@
 import pickle
 
-blue = '2312'
-black = len
+cur_str = '2312'
+cur_fn = len
 with open('./../data/fighters.pickle', 'wb') as f:
-    pickle.dump((blue, black), f)
+    pickle.dump((cur_str, cur_fn), f)
 
 with open('./../data/fighters.pickle', 'rb') as f:
-    load_blue, load_black = pickle.load(f)
-    print(load_black([2,3,4]), load_blue)
+    load_str, load_fn = pickle.load(f)
+    print(load_fn([2,3,4]), load_str)
 
 
 print('-----------------------------------------------')

@@ -36,3 +36,5 @@ sorted(users, key=lambda user: user['name'])
 nums = [[2,3],[1,21,3], [23,1,3]]
 list(zip(*nums)) #[[2,1,23], [3,21,1]]
 ```
+
+# == vs is 
