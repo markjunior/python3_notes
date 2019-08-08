@@ -17,7 +17,7 @@ Write is equivalent to ‘2’.
 Execute is equivalent to ‘1’
 
 ```
-chomd 777 path/to/file
+chmod 777 path/to/file
 ```
 
 [d]  --> 表示是一个目录
