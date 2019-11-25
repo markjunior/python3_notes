@@ -32,3 +32,26 @@ import re
 pattern = re.compile(r'^(Mr\.|Mrs\.|Ms\.|Mdme\.) (?P<first>[A-Za-z]+) (?P<last>[A-Za-z]+)$')
 pattern.search(input).group('first')
 ```
+
+```
+s->                // Method with String parameter and boolean return-type
+  s.matches("...") //  Check if the string matches the regex fully
+                   //  (which implicitly adds a leading "^" and trailing "$")
+
+M{0,3}             // No, 1, 2, or 3 adjacent "M"
+(     |        )   // Followed by either:
+ C[MD]             //  A "C" with an "M" or "D" after it
+      |            // or:
+       D?          //  An optional "D"
+         C{0,3}    //  Followed by no, 1, 2, or 3 adjacent "C"
+(     |        )   // Followed by either:
+ X[CL]             //  An "X" with a "C" or "L" after it
+      |            // or:
+       L?          //  An optional "L"
+         X{0,3}    //  Followed by no, 1, 2, or 3 adjacent "X"
+(     |        )   // Followed by either:
+ I[XV]             //  An "I" with an "X" or "V" after it
+      |            // or:
+       V?          //  An optional "V"
+         I{0,3}    //  Followed by no, 1, 2, or 3 adjacent "I"
+```
